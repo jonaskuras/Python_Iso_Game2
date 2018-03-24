@@ -1,5 +1,6 @@
 import pygame
 import sys
+from pygame.locals import *
 from game_stats import Settings
 from game_tiles import Tiles
 import maps as maps
@@ -12,8 +13,7 @@ gs = Settings()
 tiles = Tiles()
 
 # set the display mode, window title and FPS clock
-screen = pygame.display.set_mode((
-    gs.screen_width, gs.screen_height), DOUBLEBUF)
+screen = pygame.display.set_mode((gs.screen_width, gs.screen_height), DOUBLEBUF)
 pygame.display.set_caption('Isometric')
 FPSCLOCK = pygame.time.Clock()
 
