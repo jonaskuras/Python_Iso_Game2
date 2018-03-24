@@ -1,8 +1,5 @@
-import pygame
-import os
-
 def map_select(map_num):
-    #the data for the map expressed as [row[tile]].
+    # the data for the map expressed as [row[tile]].
     if map_num == 1:
         map_data = [
             [2, 1, 1, 1, 1, 1],
@@ -14,8 +11,9 @@ def map_select(map_num):
             ]
         return(map_data)
 
+
 def height_select(map_num):
-    #the height data for the map expressed as [row[tile]].
+    # the height data for the map expressed as [row[tile]].
     if map_num == 1:
         height_data = [
             [0, 0, 0, 0, 0, 0],
